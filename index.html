@@ -1,423 +1,302 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html  >
 <head>
+  <!-- Site made with Mobirise Website Builder v6.0.1, https://mobirise.com -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nokia Snake Game</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    @font-face {
-      font-family: 'Nokia';
-      src: url('https://fonts.cdnfonts.com/css/nokia-cellphone') format('woff2');
-    }
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v6.0.1, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=uzq3Qo"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=uzq3Qo" type="text/css">
 
-    body {
-      font-family: 'Nokia', sans-serif;
-      background-color: #e0e0e0;
-      user-select: none;
-    }
-
-    #game-container {
-      background-color: #9ead86;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    }
-
-    #game-screen {
-      background-color: #9ead86;
-      border: 8px solid #5a6d54;
-      border-radius: 8px;
-      position: relative;
-    }
-
-    .pixel {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background-color: #313031;
-      border-radius: 2px;
-    }
-
-    .food {
-      background-color: #313031;
-      border-radius: 50%;
-    }
-
-    .snake-head {
-      background-color: #313031;
-      border-radius: 3px;
-    }
-
-    .snake-body {
-      background-color: #313031;
-      border-radius: 1px;
-    }
-
-    .btn {
-      background-color: #5a6d54;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      font-size: 14px;
-      cursor: pointer;
-      box-shadow: 0 4px 0 #3a4a36;
-      transition: all 0.1s;
-    }
-
-    .btn:active {
-      transform: translateY(2px);
-      box-shadow: 0 2px 0 #3a4a36;
-    }
-
-    .btn-large {
-      width: 60px;
-      height: 60px;
-      font-size: 18px;
-    }
-
-    #nokia-logo {
-      color: #001a4d;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-
-    .screen-border {
-      border: 12px solid #d1d1d1;
-      border-radius: 20px;
-      background-color: #d1d1d1;
-      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .screen-inner {
-      background-color: #9ead86;
-      border-radius: 8px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .antenna {
-      width: 4px;
-      height: 20px;
-      background-color: #333;
-      position: absolute;
-      top: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .speaker {
-      width: 40px;
-      height: 4px;
-      background-color: #333;
-      border-radius: 2px;
-      position: absolute;
-      top: 10px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  </style>
+  
+  
+  
 </head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu1 cid-uIKvxmFNlX" once="menu" id="menu01-j">
+	
 
-<body class="flex flex-col items-center justify-center min-h-screen bg-gray-200 p-4">
-  <div class="relative mb-8">
-    <div class="antenna"></div>
-    <div class="speaker"></div>
-    <div class="screen-border">
-      <div class="screen-inner p-4">
-        <div id="game-container" class="w-full max-w-md mx-auto">
-          <div class="flex justify-between items-center mb-2 px-2">
-            <div id="score" class="text-xl font-bold">Score: 0</div>
-            <div id="high-score" class="text-xl font-bold">High: 0</div>
-          </div>
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="https://mobiri.se">
+						<img src="assets/images/logo.png" alt="Mobirise Website Builder" style="height: 3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://mobiri.se">Mobirise</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+						<a class="nav-link link text-black display-4" href="https://mobiri.se">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="https://mobiri.se" aria-expanded="false">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="https://mobiri.se">Contacts</a>
+					</li></ul>
+				
+				<div class="navbar-buttons mbr-section-btn">
+					<a class="btn btn-primary display-4" href="https://mobiri.se"> Start Now!</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</section>
 
-          <div id="game-screen" class="w-full h-96 mx-auto mb-4"></div>
+<section data-bs-version="5.1" class="image3 cid-uIKvAx3I2g" id="image03-k">
+  
 
-          <div class="flex justify-center space-x-4 mb-4">
-            <button id="start-btn" class="btn btn-large">START</button>
-            <button id="pause-btn" class="btn btn-large" disabled>PAUSE</button>
-          </div>
+  
+  
 
-          <div class="grid grid-cols-3 gap-2 justify-items-center mb-4">
-            <div></div>
-            <button id="up-btn" class="btn">↑</button>
-            <div></div>
-            <button id="left-btn" class="btn">←</button>
-            <button id="center-btn" class="btn">OK</button>
-            <button id="right-btn" class="btn">→</button>
-            <div></div>
-            <button id="down-btn" class="btn">↓</button>
-            <div></div>
-          </div>
-
-          <div id="game-over"
-            class="hidden absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center text-white">
-            <div class="text-3xl font-bold mb-4">GAME OVER</div>
-            <div id="final-score" class="text-2xl mb-6">Score: 0</div>
-            <button id="restart-btn" class="btn btn-large">RESTART</button>
-          </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-9">
+        <h4 class="mbr-description mbr-fonts-style mb-3 align-center display-5">
+          <strong>Stitching dreams, one thread at a time.</strong>
+        </h4>
+        <p class="mbr-description mbr-fonts-style mb-4 align-center display-7">
+          Unleash your creativity and sew your way to endless possibilities.
+        </p>
+        <div class="image-wrapper">
+          <img class="w-100" src="assets/images/13.jpg" alt="Mobirise Website Builder">
         </div>
       </div>
     </div>
-    <div class="text-center mt-4">
-      <div id="nokia-logo" class="text-2xl font-bold">NOKIA</div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="clients1 cid-uIKvDukBQn" id="clients01-l">
+  
+
+  
+  
+  <div class="container-fluid">
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 content-head">
+        <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+          <strong>Creators unleashed</strong>
+        </h3>
+        
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-6 card col-lg-4">
+        <div class="card-wrap card1">
+          <div class="content-wrap">
+            <div class="mbr-section-btn card-btn align-center">
+              <a class="btn btn-white display-7" href="https://mobiri.se"><span class="socicon socicon-instagram mbr-iconfont mbr-iconfont-btn"></span>/profilelink</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 card col-lg-4">
+        <div class="card-wrap card2">
+          <div class="content-wrap">
+            <div class="mbr-section-btn card-btn align-center">
+              <a class="btn btn-white display-7" href="https://mobiri.se"><span class="socicon socicon-instagram mbr-iconfont mbr-iconfont-btn"></span>/profilelink</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 card col-lg-4">
+        <div class="card-wrap card3">
+          <div class="content-wrap">
+            <div class="mbr-section-btn card-btn align-center">
+              <a class="btn btn-white display-7" href="https://mobiri.se"><span class="socicon socicon-instagram mbr-iconfont mbr-iconfont-btn"></span>/profilelink</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
     </div>
   </div>
+</section>
 
-  <div class="text-center text-gray-600 mt-4">
-    <p>Use arrow keys or buttons to control the snake</p>
-    <p class="text-sm">Classic Nokia Snake Game Clone</p>
-  </div>
+<section data-bs-version="5.1" class="list05 cid-uIKvN9F1jV" id="list05-m">
+    
+    <div class="container">
+        <div class="col-12 mb-5 content-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>FAQ</strong>
+            </h3>
+            
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-12 col-lg-8">
+                <div class="item features-without-image col-12 active">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>How long does it take to receive the final photos?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">
+                            The turnaround time for receiving the final edited photos depends on the scope of the
+                            project. Generally, you can expect to receive a preview or a selection of edited photos
+                            within a week after the photoshoot. The complete set of edited photos will be delivered
+                            within a few weeks.
+                        </p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>What is your pricing structure?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">
+                            My pricing varies depending on the type of photoshoot and the specific requirements. For
+                            detailed pricing information, please reach out via the contact form, and I'll provide you
+                            with a personalized quote.
+                        </p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>How can I access my photos after the shoot?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">
+                            After the photoshoot, I will provide you with a private online gallery where you can view
+                            and download your edited photos. You'll receive a password-protected link that you can share
+                            with friends and family.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-            // Game constants
-            const GRID_SIZE = 20;
-            const CELL_SIZE = 20;
-            const GAME_WIDTH = 400;
-            const GAME_HEIGHT = 400;
-            const FPS = 10;
-            
-            // Game variables
-            let snake = [];
-            let food = {};
-            let direction = 'right';
-            let nextDirection = 'right';
-            let score = 0;
-            let highScore = localStorage.getItem('snakeHighScore') || 0;
-            let gameInterval;
-            let isPaused = false;
-            let gameStarted = false;
-            
-            // DOM elements
-            const gameScreen = document.getElementById('game-screen');
-            const scoreDisplay = document.getElementById('score');
-            const highScoreDisplay = document.getElementById('high-score');
-            const gameOverDisplay = document.getElementById('game-over');
-            const finalScoreDisplay = document.getElementById('final-score');
-            const startBtn = document.getElementById('start-btn');
-            const pauseBtn = document.getElementById('pause-btn');
-            const restartBtn = document.getElementById('restart-btn');
-            const upBtn = document.getElementById('up-btn');
-            const downBtn = document.getElementById('down-btn');
-            const leftBtn = document.getElementById('left-btn');
-            const rightBtn = document.getElementById('right-btn');
-            const centerBtn = document.getElementById('center-btn');
-            
-            // Set game screen size
-            gameScreen.style.width = `${GAME_WIDTH}px`;
-            gameScreen.style.height = `${GAME_HEIGHT}px`;
-            
-            // Initialize high score display
-            highScoreDisplay.textContent = `High: ${highScore}`;
-            
-            // Initialize snake
-            function initSnake() {
-                snake = [
-                    {x: 10, y: 10},
-                    {x: 9, y: 10},
-                    {x: 8, y: 10}
-                ];
-                direction = 'right';
-                nextDirection = 'right';
-            }
-            
-            // Generate food at random position
-            function generateFood() {
-                const x = Math.floor(Math.random() * GRID_SIZE);
-                const y = Math.floor(Math.random() * GRID_SIZE);
-                
-                // Make sure food doesn't appear on snake
-                const onSnake = snake.some(segment => segment.x === x && segment.y === y);
-                if (onSnake) {
-                    return generateFood();
-                }
-                
-                food = {x, y};
-                return food;
-            }
-            
-            // Draw game elements
-            function draw() {
-                // Clear game screen
-                gameScreen.innerHTML = '';
-                
-                // Draw snake
-                snake.forEach((segment, index) => {
-                    const segmentElement = document.createElement('div');
-                    segmentElement.className = index === 0 ? 'pixel snake-head' : 'pixel snake-body';
-                    segmentElement.style.left = `${segment.x * CELL_SIZE}px`;
-                    segmentElement.style.top = `${segment.y * CELL_SIZE}px`;
-                    gameScreen.appendChild(segmentElement);
-                });
-                
-                // Draw food
-                if (food) {
-                    const foodElement = document.createElement('div');
-                    foodElement.className = 'pixel food';
-                    foodElement.style.left = `${food.x * CELL_SIZE}px`;
-                    foodElement.style.top = `${food.y * CELL_SIZE}px`;
-                    gameScreen.appendChild(foodElement);
-                }
-            }
-            
-            // Update game state
-            function update() {
-                if (isPaused || !gameStarted) return;
-                
-                // Update direction
-                direction = nextDirection;
-                
-                // Move snake
-                const head = {...snake[0]};
-                
-                switch (direction) {
-                    case 'up':
-                        head.y -= 1;
-                        break;
-                    case 'down':
-                        head.y += 1;
-                        break;
-                    case 'left':
-                        head.x -= 1;
-                        break;
-                    case 'right':
-                        head.x += 1;
-                        break;
-                }
-                
-                // Check for collisions
-                if (
-                    head.x < 0 || head.x >= GRID_SIZE ||
-                    head.y < 0 || head.y >= GRID_SIZE ||
-                    snake.some(segment => segment.x === head.x && segment.y === head.y)
-                ) {
-                    gameOver();
-                    return;
-                }
-                
-                // Add new head
-                snake.unshift(head);
-                
-                // Check if snake ate food
-                if (head.x === food.x && head.y === food.y) {
-                    score += 10;
-                    scoreDisplay.textContent = `Score: ${score}`;
-                    generateFood();
-                } else {
-                    // Remove tail if no food was eaten
-                    snake.pop();
-                }
-                
-                draw();
-            }
-            
-            // Game over
-            function gameOver() {
-                clearInterval(gameInterval);
-                gameStarted = false;
-                
-                // Update high score
-                if (score > highScore) {
-                    highScore = score;
-                    localStorage.setItem('snakeHighScore', highScore);
-                    highScoreDisplay.textContent = `High: ${highScore}`;
-                }
-                
-                // Show game over screen
-                finalScoreDisplay.textContent = `Score: ${score}`;
-                gameOverDisplay.classList.remove('hidden');
-                
-                // Disable pause button
-                pauseBtn.disabled = true;
-            }
-            
-            // Start game
-            function startGame() {
-                if (gameStarted) return;
-                
-                score = 0;
-                scoreDisplay.textContent = `Score: ${score}`;
-                initSnake();
-                generateFood();
-                draw();
-                
-                gameOverDisplay.classList.add('hidden');
-                gameStarted = true;
-                isPaused = false;
-                pauseBtn.disabled = false;
-                pauseBtn.textContent = 'PAUSE';
-                
-                clearInterval(gameInterval);
-                gameInterval = setInterval(update, 1000 / FPS);
-            }
-            
-            // Pause/resume game
-            function togglePause() {
-                if (!gameStarted) return;
-                
-                isPaused = !isPaused;
-                pauseBtn.textContent = isPaused ? 'RESUME' : 'PAUSE';
-            }
-            
-            // Change direction
-            function changeDirection(newDirection) {
-                if (!gameStarted || isPaused) return;
-                
-                // Prevent reversing direction
-                if (
-                    (direction === 'up' && newDirection === 'down') ||
-                    (direction === 'down' && newDirection === 'up') ||
-                    (direction === 'left' && newDirection === 'right') ||
-                    (direction === 'right' && newDirection === 'left')
-                ) {
-                    return;
-                }
-                
-                nextDirection = newDirection;
-            }
-            
-            // Event listeners
-            startBtn.addEventListener('click', startGame);
-            pauseBtn.addEventListener('click', togglePause);
-            restartBtn.addEventListener('click', startGame);
-            upBtn.addEventListener('click', () => changeDirection('up'));
-            downBtn.addEventListener('click', () => changeDirection('down'));
-            leftBtn.addEventListener('click', () => changeDirection('left'));
-            rightBtn.addEventListener('click', () => changeDirection('right'));
-            centerBtn.addEventListener('click', togglePause);
-            
-            // Keyboard controls
-            document.addEventListener('keydown', (e) => {
-                switch (e.key) {
-                    case 'ArrowUp':
-                        changeDirection('up');
-                        break;
-                    case 'ArrowDown':
-                        changeDirection('down');
-                        break;
-                    case 'ArrowLeft':
-                        changeDirection('left');
-                        break;
-                    case 'ArrowRight':
-                        changeDirection('right');
-                        break;
-                    case ' ':
-                        togglePause();
-                        break;
-                    case 'Enter':
-                        if (!gameStarted) startGame();
-                        break;
-                }
-            });
-            
-            // Initial draw
-            initSnake();
-            generateFood();
-            draw();
-        });
+<section data-bs-version="5.1" class="numbers01 cid-uIKvQa52Xi" id="numbers01-n">
+	
+	
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 content-head">
+				<div class="mbr-section-head mb-5">
+					<h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+						<strong>Features with numbers</strong>
+					</h4>
+					
+					
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 active">
+				<div class="item-wrapper">
+					<div class="item-content">
+						<h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number display-1">
+							<strong>01.</strong>
+						</h5>
+						<h4 class="card-title mbr-fonts-style display-5">
+							<strong>Form</strong>
+						</h4>
+						<p class="card-text mbr-fonts-style mt-0 mb-3 display-7">
+							We begin by shaping the form of concepts, setting the stage for meaningful content.
+						</p>
+						<div class="mbr-section-btn item-footer">
+							<a href="" class="btn item-btn btn-primary display-7">Learn More</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="item-content">
+						<h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number display-1">
+							<strong>02.</strong>
+						</h5>
+						<h4 class="card-title mbr-fonts-style display-5">
+							<strong>Content</strong>
+						</h4>
+						<p class="card-text mbr-fonts-style mt-0 mb-3 display-7">
+							With form in place, we infuse it with engaging content, giving depth and purpose.
+						</p>
+						<div class="mbr-section-btn item-footer">
+							<a href="" class="btn item-btn btn-primary display-7">Learn More</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="item-content">
+						<h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 mbr-number display-1">
+							<strong>03.</strong>
+						</h5>
+						<h4 class="card-title mbr-fonts-style display-5">
+							<strong>Meaning</strong>
+						</h4>
+						<p class="card-text mbr-fonts-style mt-0 mb-3 display-7">
+							The journey concludes as we uncover the profound meaning within our creations, making them
+							truly resonate.
+						</p>
+						<div class="mbr-section-btn item-footer">
+							<a href="" class="btn item-btn btn-primary display-7">Learn More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="contacts4 map1 cid-uIKvU8lpCA" id="contacts04-o">
+
+	
+
+	<div class="main_wrapper">
+		<div class="b_wrapper">
+			<div class="container-fluid">
+				<div class="row justify-content-start">
+					<div class="col-md-5 col-lg-4 item-wrapper">
+                        <h5 class="cardTitle mbr-fonts-style mb-2 display-5">
+                            <strong>Contact Us</strong>
+                        </h5>
+                        <ul class="list mbr-fonts-style display-7">
+                            <li class="mbr-text item-wrap">Phone: <a href="tel:+12345678910" class="text-primary">0 (800) 123 45
+                                    67</a></li>
+                            <li class="mbr-text item-wrap">WhatsApp: <a href="tel:+12345678910" class="text-primary">0 (800) 123
+                                    45 67</a></li>
+                            <li class="mbr-text item-wrap">Email: <a href="mailto:info@site.com" class="text-primary">info@site.com</a></li>
+                            <li class="mbr-text item-wrap">Address: 350 5th Ave, New York, NY 10118</li>
+                            <li class="mbr-text item-wrap">Working hours: 9:00AM - 6:00PM</li>
+                        </ul>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen" allowfullscreen=""></iframe></div>
+	</div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/3947189" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/drag-drop-website-builder.html">Drag & Drop Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
 </body>
-
 </html>
